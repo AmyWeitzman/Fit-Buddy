@@ -5,7 +5,7 @@ from flask_migrate import Migrate
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:passwordPSQL147@rds-psql-cs147.cocc3xkmyxa4.us-east-1.rds.amazonaws.com:5432/fitbuddydb"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:password@rds-psql-cs147.cocc3xkmyxa4.us-east-1.rds.amazonaws.com:5432/fitbuddydb"
 db = SQLAlchemy(app)
 migrate = Migrate(app, db);
 
